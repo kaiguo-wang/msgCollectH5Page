@@ -19,6 +19,5 @@ exports.pages = function () {
       }
     }
   })
-  
   return obj
 }
