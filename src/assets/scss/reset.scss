@@ -1,0 +1,287 @@
+@import 'utils.scss';
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+button,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: "Microsoft Yahei";
+    -webkit-text-size-adjust: 100% !important;
+    box-sizing: border-box;
+}
+
+input {
+    line-height: normal !important;
+}
+
+body {
+    line-height: 1;
+    background-color: $cFFF;
+}
+
+:focus {
+    outline: 1;
+}
+
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+// 避免从父原则
+body {
+    z-index: 1;
+    position: relative;
+}
+
+/*all kinds of font-size*/
+
+.fz10 {
+    @include dpr-font-size(10);
+}
+
+.fz11 {
+    @include dpr-font-size(11);
+}
+
+.fz12 {
+    @include dpr-font-size(12);
+}
+
+.fz13 {
+    @include dpr-font-size(13);
+}
+
+.fz14 {
+    @include dpr-font-size(14);
+}
+
+.fz16 {
+    @include dpr-font-size(16);
+}
+
+.fz18 {
+    @include dpr-font-size(18);
+}
+
+.fz20 {
+    @include dpr-font-size(20);
+}
+
+.fz22 {
+    @include dpr-font-size(22);
+}
+
+.fz24 {
+    @include dpr-font-size(24);
+}
+
+.fz30 {
+    @include dpr-font-size(30);
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.colorRed {
+    color: $search;
+}
+
+/*重置placeholder颜色*/
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: $c999;
+    font-weight: 200;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $c999;
+    font-weight: 200;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $c999;
+    font-weight: 200;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: $c999;
+    font-weight: 200;
+}
+
+.clear {
+    @include clear();
+}
+input {
+    -webkit-appearance: none !important;
+    outline: none !important;
+    -webkit-appearance: none !important; /*去除系统默认的样式*/
+}

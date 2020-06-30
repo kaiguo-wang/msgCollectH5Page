@@ -1,0 +1,82 @@
+@mixin dpr-font-size($px) {
+    [data-dpr='1'] & {
+        font-size: $px * 1px;
+    }
+    [data-dpr='2'] & {
+        font-size: $px * 2px;
+    } // for mx3
+    [data-dpr="2.5"] & {
+        font-size: $px * 2.5px;
+    } // for 小米note
+    [data-dpr="2.75"] & {
+        font-size: $px * 2.75px;
+    }
+    [data-dpr="3"] & {
+        font-size: $px * 3px;
+    } // for 三星note4
+    [data-dpr="4"] & {
+        font-size: $px * 4px;
+    }
+}
+
+// 一行多余字生成...
+@mixin dot() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// 清除浮动
+@mixin clear() {
+    &:after {
+        clear: both;
+        display: block;
+        content: '';
+    }
+}
+
+// 以iphone6为基准
+@function px2rem($px, $base-font-size: 75) {
+    @return ($px / $base-font-size) * 1rem;
+}
+
+/*all colors*/
+
+$cFFF: #fff;
+$c000: #000;
+$c333: #333;
+$c666: #666;
+$c999: #999;
+$cCCC: #ccc;
+$borderColor: #ccc;
+$borderColor1: #dbdbdb;
+$borderColor2: #e5e4e9;
+$borderColor3: #F0F0F0;
+$search: #eb2b2b;
+$bodyBg: #f5f5f5;
+$blue: #2b7fe7;
+$groundColor: #f3f3f3;
+$groundColor1: #f0eff5;
+$orange: #ff5831;
+/*只读背景色*/
+
+$readonlyColor: #f0f0f0;
+/*批次号背景色*/
+
+$backgroundRed: #ffefef;
+
+$boxShadow: rgba(5,63,170,0.1);
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+.number-style {
+    font-family: Arial !important;
+}
+/********航班动态全局颜色************/
+$mainBlue: #4286ee; // 主色
+
+/********航班动态全局颜色************/

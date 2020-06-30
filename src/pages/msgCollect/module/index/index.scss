@@ -1,0 +1,21 @@
+@import '../../../../assets/scss/reset.scss';
+.msg-collect {
+    padding: px2rem(80) px2rem(20);
+    .msg-collect-title {
+        width: 100%;
+        margin-bottom: px2rem(30);
+        text-align: center;
+        font-size: px2rem(40);
+    }
+    .send-code {
+        &.van-button--small {
+            padding: 0 5px;
+        }
+    }
+    .footer {
+        margin: px2rem(30) 0;
+        .go-detail {
+            margin-top: px2rem(20);
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import '../../../../assets/scss/reset.scss';
+.msg-detail {
+    padding: 0 px2rem(20);
+    [class*=van-hairline]::after {
+        border: 0;
+    }
+    .register {
+        display: flex;
+        justify-content:flex-end;
+        .register-btn {
+            margin: px2rem(26) px2rem(15) px2rem(10) 0;
+            color: #07c160;
+            font-size: px2rem(30);
+            border: 0;
+        }
+    }
+    .search-btn {
+        margin: px2rem(20) 0;
+    }
+    .time-address {
+        padding-bottom: px2rem(1);
+        margin-top: px2rem(5);
+        border: 1px solid #ebedf0;
+    }
+    .address-part {
+        margin-bottom: px2rem(15);
+        .btn {
+            margin-top: px2rem(10);
+        }
+    }
+    .dashed-divider {
+        margin: px2rem(20) 0;
+        border-color: red;
+    }
+    .submit-address {
+        margin: px2rem(30) 0;
+    }
+    .cancel-btn {
+        margin: 0 0 px2rem(30) 0;
+    }
+}

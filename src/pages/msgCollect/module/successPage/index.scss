@@ -1,0 +1,22 @@
+@import '../../../../assets/scss/reset.scss';
+.success-page {
+    .van-empty__bottom {
+        text-align: center;
+    }
+    .txt-center {
+        margin-bottom: px2rem(16);
+        font-size: px2rem(30);
+        color: #999;
+        text-align: center;
+        &.sub-customer-no-part {
+            margin-bottom: 0
+        }
+
+        .sub-customer-no {
+            color: red;
+        }
+    }
+    .bottom-button {
+
+    }
+}
