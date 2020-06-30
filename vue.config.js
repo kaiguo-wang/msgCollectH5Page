@@ -28,11 +28,6 @@ module.exports = {
 	},
 	// webpack手动配置
 	configureWebpack: (config) => {
-		// resolve: {
-		// 	alias: {
-		// 	  'vue$': 'vue/dist/vue.esm.js' 
-		// 	}
-		// },
 		if (isProduction) {
 			// 取消webpack警告的性能提示
 			config.performance = {
