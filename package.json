@@ -2,7 +2,7 @@
   "name": "wyz",
   "version": "0.1.0",
   "private": true,
-  "author": "JackChen <278910933@qq.com>",
+  "author": "Wang Kaiguo 18665981309@163.com",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
