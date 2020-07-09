@@ -4,7 +4,7 @@ const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
 	pages: utils.pages(), // 多页配置
-    publicPath: isProduction ? '/msgCollect/module/' : '/msgCollect/module/', // 部署生产环境和开发环境下的URL：可对当前环境进行区分
+    publicPath: isProduction ? '/msgCollect/module/index' : '/msgCollect/module/index', // 部署生产环境和开发环境下的URL：可对当前环境进行区分
 	lintOnSave: false, // 是否在代码保存时进行eslint检测
 	outputDir: 'dist',
 	assetsDir: 'assets',
@@ -14,15 +14,13 @@ module.exports = {
   	productionSourceMap: false, // 是否在构建生产包时生成sourceMap文件，false将提高构建速度
 	devServer: { // webpack-dev-server 相关配置
 		port: '8090', // 端口号
+		productionSourceMap: false, // 构建时是否需要生成sourceMap,fasle能够提升构建速度
 		https: false, // 关闭https
 		hotOnly: true, // 热更新
 		// proxy: { // 使用代理
 		//   '/api': {
-		//      target: '//www.woyouzhe.com', // 目标代理服务器地址
-		//     changeOrigin: true, // 允许跨域
-		//     pathRewrite:{
-		//       '^/api': '' // 重写路径，需要设置重写的话，要在后面的调用接口前加上/api来代替target
-		//     }
+		//      target: '', // 目标代理服务器地址
+		//     changeOrigin: true // 允许跨域
 		//   }
 		// }
 	},
